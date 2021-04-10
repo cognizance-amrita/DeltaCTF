@@ -83,7 +83,7 @@ class ServerConfig(object):
         or gen_secret_key()
 
     DATABASE_URL: str = empty_str_cast(config_ini["server"]["DATABASE_URL"]) \
-        or f"postgres:///{os.path.dirname(os.path.abspath(__file__))}/ctfd.db"
+        or f"postgres://wlvnhwfrxziaei:01241f0f8ad280e41a029924e41a4f7755a9e20a17aa03b3695ce3d05ef25c2a@ec2-52-21-252-142.compute-1.amazonaws.com:5432/d7rt2fqkqrjqm4b"
 
     REDIS_URL: str = empty_str_cast(config_ini["server"]["REDIS_URL"])
 
